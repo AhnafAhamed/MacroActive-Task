@@ -1,0 +1,96 @@
+.nav {
+  position: relative;
+  margin-top: 3rem;
+  width: 37.5rem;
+  height: 8.9rem;
+  display: flex;
+  justify-content: space-around;
+  z-index: 6;
+
+  &__item {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &:nth-child(3) {
+      width: 4rem;
+      height: 4rem;
+      border: 1.5px solid $header-gray;
+      border-radius: 50%;
+      align-self: center;
+      &.white {
+        border: 1.5px solid #fff;
+      }
+    }
+
+    &_icon {
+      &-plus {
+        color: $header-gray;
+        font-size: 2.6rem;
+        line-height: 4.2rem;
+        font-weight: 700;
+        &.rotate {
+          color: $main-white;
+          transform: rotate(135deg);
+        }
+      }
+    }
+
+    &_text {
+      font-family: $archivo;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.1rem;
+      color: $header-gray;
+      margin: 0;
+      margin-top: 0.85rem;
+    }
+  }
+  &__actions {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    &.open {
+      display: block;
+    }
+    &_item {
+      width: 7.5rem;
+      height: 7.5rem;
+      background-color: $actions-gray;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &_photo {
+      position: absolute;
+      bottom: 20px;
+      left: 6.8rem;
+      bottom: 0.843rem;
+    }
+    &_weight {
+      position: absolute;
+      left: 15.058rem;
+      bottom: 6.742rem;
+    }
+    &_measure {
+      position: absolute;
+
+      left: 23.316rem;
+      bottom: 0.843rem;
+    }
+    &_text {
+      font-family: $oswald;
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.2rem;
+      color: $main-white;
+      text-transform: uppercase;
+      margin: 0;
+      margin-top: 0.57rem;
+    }
+  }
+}

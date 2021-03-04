@@ -1,0 +1,101 @@
+.intro {
+  color: $main-white;
+
+  &__heading {
+    min-width: 22.7rem;
+    height: 2.6rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: $oswald;
+    color: $header-gray;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 2.3rem;
+    margin-bottom: 1.5rem;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    width: 32.1rem;
+    height: 9.4rem;
+    background-color: $background-gray;
+    border-radius: 1.2rem;
+    margin-right: 2.9rem;
+    overflow: hidden;
+  }
+  &__circle {
+    position: relative;
+    width: 7.2rem;
+    height: 7.2rem;
+    background-color: $main-purple;
+    padding: 2.3rem 1.35rem;
+    border-radius: 50%;
+    margin-left: 2.6rem;
+  }
+  &__rings-one {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid $circle-gray;
+    top: -1.4rem;
+    left: -1.4rem;
+    border-radius: 50%;
+  }
+  &__rings-two {
+    position: absolute;
+    width: 13.2rem;
+    height: 13.2rem;
+    border: 1px solid $circle-gray;
+    top: -3rem;
+    left: -3rem;
+    border-radius: 50%;
+  }
+  &__rings-three {
+    position: absolute;
+    width: 17rem;
+    height: 17rem;
+    border: 1px solid $circle-gray;
+    top: -4.9rem;
+    right: -4.9rem;
+    border-radius: 50%;
+  }
+
+  &__weight {
+    min-width: 4.5rem;
+    height: 2.6rem;
+    font-family: $oswald;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  &__text {
+    margin: 1.8rem 1.5rem 2rem 6.5rem;
+    font-family: $archivo;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
+  }
+  &__message {
+    margin: 0;
+    margin-bottom: 1.4rem;
+  }
+  &__update {
+    margin: 0;
+    text-decoration: none;
+    color: $main-white;
+    color: $header-gray;
+    display: flex;
+    align-items: center;
+    &_arrow {
+      margin-left: 0.8rem;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+}
